@@ -7,10 +7,11 @@ public class Main {
 	public static void main(String[] args) {
         BubbleSort bs = new BubbleSort();
         MergeSort ms = new MergeSort();
+        QuickSort qs = new QuickSort();
         int[] input = generateArray(10);
         System.out.println("Input: ");
         printArray(input);
-        int[] output = ms.solution(input);
+        int[] output = qs.solution(input);
         System.out.print("Output: ");
         printArray(output);
     }
