@@ -2,31 +2,26 @@ package Main;
 
 public class QuickSort{
     public int[] solution(int[] input){
-        if(input.length <= 1) return input;
-        sortIt(input, 0,input.length-1);
+        sort(input, 0, input.length-1);
         return input;
     }
-    public void sortIt(int[] input, int low, int high){
-        if(low == high || low>high) return;
-        int pivot = input[(low+high)/2];
-        int start = low;
-        int end = high;
-        while(start < end){
-            if(input[start] == pivot ) start++;
-            if(input[end] == pivot ) end--;
-            if(input[start] > pivot && input[end] < pivot){
-                int temp = input[start];
-                input[start] = input[end];
-                input[end] = temp;
-                start++;
-                end++;
-            }else if(input[start] > pivot){
-                end--;
-            }else if(input[end] < pivot){
-                start++;
+
+    public void sort(int[] input, int low, int high){
+        if(high-low<1) return;
+        int pivot = input[high];
+        int lowest = low;
+        for(int i=low;i<high;i++){
+            if(input[i] <= pivot){
+                int temp = input[lowest];
+                input[lowest] = input[i];
+                input[i] = temp;
+                lowest++;
             }
         }
-        sortIt(input, low, (low+high)/2);
-        sortIt(input,(low+high)/2, high);
+        input[high] = input[lowest];
+        input[lowest] = pivot;
+        sort(input,low,lowest-1);
+        sort(input,lowest,high);
     }
+
 }

@@ -8,7 +8,8 @@ public class Main {
         BubbleSort bs = new BubbleSort();
         MergeSort ms = new MergeSort();
         QuickSort qs = new QuickSort();
-        int[] input = generateArray(10);
+        int[] input = new int[]{5,1,1,2,0,0};
+        //int[] input = generateArray(10);
         System.out.println("Input: ");
         printArray(input);
         int[] output = qs.solution(input);
