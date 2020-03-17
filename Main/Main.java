@@ -10,7 +10,7 @@ public class Main {
         QuickSort qs = new QuickSort();
         CountingSort cs = new CountingSort();
         RadixSort rs = new RadixSort();
-        int[] input = generateArray(1000);
+        int[] input = generateArray(100);
         //int[] input = new int[]{89,55,57,54,12,51,54,93,55,6,26,45,79,99,40,84,67,78,5,6,57,14,56,56,25,11,10,35,83,65,11,12,84,92,45,58,49,38,39,4,40,12,29,91,18,85,13,65,65,100,46,47,100,58,42,38,1,54,87,8,66,9,8,28,68,86,25,17,91,91,23,51,75,38,99,24,69,93,11,14,56,42,28,41,18,92,83,85,66,42,13,71,7,49,100,12,74,65,58,25};
         //int[] input = new int[]{89,55,57,54,12,51,54,93,55,6,26,45};
         //Bubble Sort
@@ -55,7 +55,7 @@ public class Main {
         int[] outputArray = new int[size];
         Random rd = new Random();
         for (int i = 0; i < size; i++) {
-            outputArray[i] = rd.nextInt(10000); // storing random integers in an array
+            outputArray[i] = rd.nextInt(400); // storing random integers in an array
          }
         return outputArray;
     }
