@@ -3,6 +3,8 @@ package Main;
 public class BubbleSort{
 
     public int[] solution(int[] input){
+      //  Draw.initialize("Bubble Sort");
+      //  Draw.updateValues(input);
         int swaps = -1;
         while(swaps != 0){
             swaps = 0;
@@ -12,6 +14,7 @@ public class BubbleSort{
                     input[i] = input[i+1];
                     input[i+1] = temp;
                     swaps++;
+                   // Draw.updateValues(input);
                 }
             }
         }

@@ -12,14 +12,23 @@ public class Draw extends JPanel {
     static int[] values;
     static JFrame frame;
 
-    public static void initialize() {
-        frame = new JFrame("Quick Sort");
+    public static void initialize(String name) {
+        frame = new JFrame(name);
         Draw draw = new Draw();
         frame.setVisible(true);
         frame.setSize(620, 550);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         draw.setBackground(Color.BLACK);
         frame.getContentPane().add(draw);
+        try {
+            //System.out.println("Sleeping");
+            TimeUnit.SECONDS.sleep(1);
+           // System.out.println("Awake");
+        } catch (InterruptedException e) {
+            
+            System.out.print("Interuption...................");
+            e.printStackTrace();
+        }
     }
 
     @Override
@@ -46,7 +55,7 @@ public class Draw extends JPanel {
         frame.getContentPane().repaint();
         try {
             //System.out.println("Sleeping");
-            TimeUnit.MILLISECONDS.sleep(15);
+            TimeUnit.MILLISECONDS.sleep(20);
            // System.out.println("Awake");
         } catch (InterruptedException e) {
             
@@ -54,4 +63,6 @@ public class Draw extends JPanel {
             e.printStackTrace();
         }
     }
+
+	
 }

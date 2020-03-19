@@ -5,6 +5,8 @@ import java.util.TreeMap;
 
 public class CountingSort{
     public int[] solution(int[] input){
+        // Draw.initialize("Counting Sort");
+        // Draw.updateValues(input);
         TreeMap<Integer, Integer> countMap = new TreeMap<>();
         for(int i:input){
             if(countMap.containsKey(i)){
@@ -21,6 +23,7 @@ public class CountingSort{
             int tempIndex = (int) obj.getValue();
             for(int i=currIndex;i<currIndex+tempIndex;i++){
                 input[i] = temp;
+                // Draw.updateValues(input);
             }
             currIndex += tempIndex;
         }

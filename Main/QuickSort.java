@@ -7,13 +7,13 @@ import java.util.concurrent.TimeUnit;
 public class QuickSort {
     
     public int[] solution(int[] input){
-        Draw.initialize();
+        //Draw.initialize("Quick Sort");
         sort(input, 0, input.length-1);
         return input;
     }
 
     public void sort(int[] input, int low, int high){
-        Draw.updateValues(input);
+       // Draw.updateValues(input);
         if(high-low<1) return;
         int pivot = input[high];
         int lowest = low;
@@ -23,7 +23,7 @@ public class QuickSort {
                 input[lowest] = input[i];
                 input[i] = temp;
                 lowest++;
-                Draw.updateValues(input);
+                //Draw.updateValues(input);
             }
         }
         input[high] = input[lowest];
