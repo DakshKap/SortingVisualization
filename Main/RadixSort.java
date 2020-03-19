@@ -20,15 +20,7 @@ public class RadixSort {
         //paintArray(input);
         return input; 
     }
-    // public void paintArray(int[] input){
-    //     frame.setVisible(true);
-    //     frame.setSize(620, 450);
-    //     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    //     draw.setBackground(Color.BLACK);
-    //     draw.values = input;
-    //     frame.add(draw);
-    //     draw.drawing();
-    // }
+    
     public void countSort(int[] input,int exp){
         int[] count = new int[10];
         int[] output = new int[input.length];

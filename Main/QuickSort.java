@@ -2,16 +2,18 @@ package Main;
 
 import javax.swing.JFrame;
 import java.awt.Color;
+import java.util.Arrays;
+import java.util.concurrent.TimeUnit;
 public class QuickSort {
-    JFrame frame = new JFrame("Quick Sort");
-    Draw draw = new Draw();
+    
     public int[] solution(int[] input){
+        Draw.initialize();
         sort(input, 0, input.length-1);
         return input;
     }
 
     public void sort(int[] input, int low, int high){
-        paintArray(input);
+        Draw.updateValues(input);
         if(high-low<1) return;
         int pivot = input[high];
         int lowest = low;
@@ -21,6 +23,7 @@ public class QuickSort {
                 input[lowest] = input[i];
                 input[i] = temp;
                 lowest++;
+                Draw.updateValues(input);
             }
         }
         input[high] = input[lowest];
@@ -28,14 +31,5 @@ public class QuickSort {
         sort(input,low,lowest-1);
         sort(input,lowest,high);
     }
-    public void paintArray(int[] input){
-        frame.setVisible(true);
-        frame.setSize(620, 450);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        draw.setBackground(Color.BLACK);
-        draw.values = input;
-        frame.add(draw);
-        draw.drawing();
-    }
-
+    
 }
