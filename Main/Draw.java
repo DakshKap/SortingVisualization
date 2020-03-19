@@ -46,7 +46,7 @@ public class Draw extends JPanel {
         frame.getContentPane().repaint();
         try {
             //System.out.println("Sleeping");
-            TimeUnit.MILLISECONDS.sleep(10);
+            TimeUnit.MILLISECONDS.sleep(15);
            // System.out.println("Awake");
         } catch (InterruptedException e) {
             
