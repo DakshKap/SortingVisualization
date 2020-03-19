@@ -5,15 +5,15 @@ Goal of visualization is to help better understanding how diffrent sorting algor
 Implemented using Java and Swing.
 
 Bubble Sort:
-![Bubble Sort](gifs/Bubble_Sort.png)
+![Bubble Sort](gifs/Bubble_Sort.gif)
 
 Counting Sort:
-![Counting Sort](gifs/Counting_Sort.png)
+![Counting Sort](gifs/Counting_Sort.gif)
 
 Quick Sort:
-![Quick Sort](gifs/Quick_Sort.png)
+![Quick Sort](gifs/Quick_Sort.gif)
 
 Radix Sort:
-![Radix Sort](gifs/Radix_Sort.png)
+![Radix Sort](gifs/Radix_Sort.gif)
 
 Merge Sort: Visual in progress.
