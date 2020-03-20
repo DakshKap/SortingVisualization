@@ -10,10 +10,15 @@ Bubble Sort:
 Counting Sort:
 ![Counting Sort](gifs/Counting_Sort.gif)
 
+Merge Sort:
+![Merge Sort](gifs/Merge_Sort.gif)
+
 Quick Sort:
 ![Quick Sort](gifs/Quick_Sort.gif)
 
 Radix Sort:
 ![Radix Sort](gifs/Radix_Sort.gif)
 
-Merge Sort: Visual in progress.
+Selection Sort:
+![Selection Sort](gifs/Selection_Sort.gif)
+

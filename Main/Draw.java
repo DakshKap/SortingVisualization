@@ -2,13 +2,17 @@ package Main;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import javax.swing.SwingUtilities;
+
 
 import java.awt.Color;
 import java.awt.Graphics;
 import java.util.concurrent.TimeUnit;
 
 public class Draw extends JPanel {
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     static int[] values;
     static JFrame frame;
 
@@ -55,7 +59,7 @@ public class Draw extends JPanel {
         frame.getContentPane().repaint();
         try {
             //System.out.println("Sleeping");
-            TimeUnit.MILLISECONDS.sleep(20);
+            TimeUnit.MILLISECONDS.sleep(18);
            // System.out.println("Awake");
         } catch (InterruptedException e) {
             

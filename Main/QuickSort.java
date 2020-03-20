@@ -1,9 +1,6 @@
 package Main;
 
-import javax.swing.JFrame;
-import java.awt.Color;
-import java.util.Arrays;
-import java.util.concurrent.TimeUnit;
+
 public class QuickSort {
     
     public int[] solution(int[] input){

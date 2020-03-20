@@ -18,7 +18,7 @@ public class CountingSort{
         }
         int currIndex = 0;
         while(countMap.size()>0){
-            Map.Entry obj = countMap.pollFirstEntry();
+            Map.Entry<Integer,Integer> obj = countMap.pollFirstEntry();
             int temp = (int) obj.getKey();
             int tempIndex = (int) obj.getValue();
             for(int i=currIndex;i<currIndex+tempIndex;i++){
